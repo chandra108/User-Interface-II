@@ -1,1 +1,366 @@
+
+/* Added a css reset to reduce browser inconsistencies */
+
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ##  Ends Eric Myers; begins css styling */
+
+/* ##  site styling begins*/
+
+
+h1 {
+    font-size: 100px;
+    font-weight: 100;
+    font-stretch: semi-condensed;
+    font-size-adjust: initial;
+    font-family: serif;
+    font: serif;
+    font-style: bold;
+    text-align: center;
+    color: rgb(176, 224, 230);
+    background-color: lightblue;
+    text-shadow:    
+    -1px -1px 0 rgba(32, 30, 134, 0.233),
+    1px -1px 0 rgba(32, 30, 134, 0.233),
+    -1px 1px 0 rgba(32, 30, 134, 0.233),
+    1px 1px 0 rgba(32, 30, 134, 0.233);
+
+}
+
+h2 {
+    font-size: 79px;
+    text-align: left;
+    font-stretch: ultra-expanded;
+    font-size-adjust: initial;
+    font-family: serif;
+    font-style: bold;
+    text-align: left;
+    color: powderblue;
+    text-shadow:    
+    -1px -1px 0 rgba(32, 30, 134, 0.233),
+    1px -1px 0 rgba(32, 30, 134, 0.233),
+    -1px 1px 0 rgba(32, 30, 134, 0.233),
+    1px 1px 0 rgba(32, 30, 134, 0.233);
+    width: 100%;
+    /* border: 0px 0px 1px 0px solid powderblue; */
+    border: 8px blue;
+    padding: none;
+    margin: none;
+      }
+      
+
+.div1 {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    border: 1px solid rgb(102, 169, 245);
+    background-color: powderblue;
+}
+
+.div2 {
+    
+    width: 100%;
+    height: 50%;
+    margin: 20px;
+    padding: nonepx;
+    border: 0px 0px 1px 0px solid rgb(0, 110, 255);
+}
+
+/* .div3 {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    border: 1px solid powderblue
+} */
+
+.container {  
+    display: flex;
+    max-width: 50%;
+   
+
+  }
+
+.container > li {  
+    flex: 1;  
+  }
+
+@media all and (max-width: 600px) {  
+    
+    .container {  
+        flex-wrap: wrap;  
+    }  
+      
+    .container > li {  
+        flex-basis: 50%;  
+    }
+  
+}  
+@media all and (max-width: 400px) {  
+    
+    .container > li {  
+        flex-basis: 100%;  
+        }  
+          
+    }
+
+.container > li {
+    /* border: 0px 0px 1px 0px; */
+
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    margin: auto;
+    text-align: center;
+    border: 3px solid rgba(32, 30, 134, 0.233);
+    padding: none;
+    display: inline-flexbox;
+    height: 20px;
+    width: 20px;
+    margin: 23px;
+    background: powderblue;
+    color: white;
+    
+}
+
+.navButton {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 21, 22, 0);
+    border: none;
+}
+
+
+  /* ##  The following grayed out code could be useful for styling individual ids, should one want to in the future */
+
+
+/* #home {
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.247);
+    background: powderblue;
+    color: white;
+}
+
+#about {
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    padding-inline-start: 0px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.247);
+    background: powderblue;
+    color: white;
+}
+
+#contact {
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.247);
+    background: powderblue;
+    color: white;
+}
+
+#projects {
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    display: inline-flexbox;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.247);
+    background: powderblue;
+    color: white; */
+/* } */
+
+/* ##  The following separator class is used here to place a 5px solid line */
+
+.separator {
+    border: .5px solid rgb(102, 169, 245);
+}
+
+
+/* ##  this starts the body starting with the main picture */
+
+.mainPicture {
+    border: 5px solid rgba(32, 30, 134, 0.233);
+    width: 100%;
+    height: auto;
+    max-width: 622px;
+    padding: none;
+    border-radius: 10px;
+    margin: 19px;
+}
+
+/* /* ##  trying to get the two divs to go side by side with multiple nested divs */
+
+.parent {
+    display: flex;
+}
+
+.container2 {
+    width: 50%;
+    background-color: red;
+}
+
+.container3 {
+    width: 50%;
+    background-color: green;    
+}
+
+.container3Text {
+    border: 5px solid rgba(32, 30, 134, 0.233);
+    width: 100%;
+    height: auto;
+    max-width: 622px;
+    padding: none;
+    border-radius: 10px;
+    margin: 19px;
+    overflow-wrap: break-word;
+}
+
+/* ##  styles for the <h3> and <p>  */
+
+h3 {
+    font-size: 60px;
+    font-family: serif;
+    font-style: bold;
+}
+p { 
+    font-size: 25px;
+    font-family: serif;
+    display: block;
+    margin: 20px auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* ##  This following code is where my projects button begin */
+
+#myprojects {
+    align-content: left;
+    margin: 30px;
+    border: 5px solid rgba(32, 30, 134, 0.233);
+    
+}
+
+/* ##  is where my picture gallery begins */
+
+  .pictureRow {
+    box-sizing: border-box;
+  }
+  
+  .pictureRow {
+    display: flex;
+  }
+  
+  .pictureColumn {
+    flex: 25%;
+    padding: none;
+    border-radius: 10px;
+    border: 5px solid rgba(32, 30, 134, 0.233);
+    margin: 30px;
+  }
+/* second picture row */
+  .pictureRow2 {
+    box-sizing: border-box;
+  }
+  
+  .pictureRow2 {
+    display: flex;
+  }
+  
+  .pictureColumn2 {
+    flex: 25%;
+    padding: none;
+    border-radius: 10px;
+    border: 5px solid rgba(32, 30, 134, 0.233);
+    margin: 30px;
+  }
+.footerLine {
+    /* bottom: solid rgba(32, 30, 134, 0.233); */
+    border: solid rgba(32, 30, 134, 0.233);
+    width: 100%;
+    height: none;
+}
+.footer {
+    background-color: lightblue;
+    width: 100%;
+    height: 75px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
