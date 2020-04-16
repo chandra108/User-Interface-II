@@ -251,7 +251,7 @@ h2 {
     margin: 19px;
 }
 
-/* /* ##  trying to get the two divs to go side by side with multiple nested divs */
+/* /* ##  two divs to go side by side with multiple nested divs using a parent div to house them in */
 
 .parent {
     display: flex;
@@ -259,12 +259,12 @@ h2 {
 
 .container2 {
     width: 50%;
-    background-color: red;
+    background-color: none;
 }
 
 .container3 {
     width: 50%;
-    background-color: green;    
+    background-color: none;    
 }
 
 .container3Text {
@@ -275,21 +275,48 @@ h2 {
     padding: none;
     border-radius: 10px;
     margin: 19px;
+    margin-left: 25px;
     overflow-wrap: break-word;
 }
 
 /* ##  styles for the <h3> and <p>  */
 
+#myProjects {
+    border: 5px solid rgba(32, 30, 134, 0.233);
+    width: 150px;
+    height: 75px;
+    border-radius: 5px;
+    margin: 33px;
+    text-align: center;
+    background-color: powderblue;
+    font-size: 20px;
+    font-style: bold;
+    
+
+}
+
 h3 {
     font-size: 60px;
     font-family: serif;
+    padding-top: 20px;
+    color: powderblue;
+    text-shadow:    
+    -1px -1px 0 rgba(32, 30, 134, 0.233),
+    1px -1px 0 rgba(32, 30, 134, 0.233),
+    -1px 1px 0 rgba(32, 30, 134, 0.233),
+    1px 1px 0 rgba(32, 30, 134, 0.233);
+    width: 100%;
+
     font-style: bold;
+    margin-left: 25px;
 }
 p { 
     font-size: 25px;
     font-family: serif;
     display: block;
-    margin: 20px auto;
+    padding-left: 33px;
+    margin: 14px auto;
+    margin-top: 1;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
@@ -350,12 +377,39 @@ p {
 
 }
 
+/* 
+<div class="footerLine"></div>
+        <div class="footer"><div class="buttonDiv2">       
+          <a href="contact.html"><button id="contactMe">Contact Me</button></a></div> */
 
 
+.footerLine {
+    text-align: center;
+}
 
+#contactMe {
+    border: 5px solid rgba(32, 30, 134, 0.233);
+    width: 145px;
+    height: 70px;
+    border-radius: 5px;
+    margin: none;
+    margin-top: 3px;
+    text-align: center;
+    background-color: powderblue;
+    font-size: 20px;
+    font-style: bold;
+    margin-left: 87%;
+}
 
-
-
+.footerText {
+    text-align: right;
+    font-size: 3.0rem;
+    width: 100%
+    height: 40px;
+    margin: -55px;
+    margin-right: 18%;
+    
+}
 
 
 
