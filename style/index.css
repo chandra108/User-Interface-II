@@ -53,11 +53,13 @@ table {
 
 /* ##  Ends Eric Myers; begins css styling */
 
+html { font-size: 62.5%; } /* =10px */
+
 /* ##  site styling begins*/
 
 
 h1 {
-    font-size: 100px;
+    font-size: 10.0rem;
     font-weight: 100;
     font-stretch: semi-condensed;
     font-size-adjust: initial;
@@ -76,7 +78,7 @@ h1 {
 }
 
 h2 {
-    font-size: 79px;
+    font-size: 7.9rem;
     text-align: left;
     font-stretch: ultra-expanded;
     font-size-adjust: initial;
@@ -155,7 +157,7 @@ h2 {
     /* border: 0px 0px 1px 0px; */
 
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
     margin: auto;
@@ -179,12 +181,20 @@ h2 {
 }
 
 
+/* ## Media Query for nav buttons */
+
+@media (max-width: 800%) {
+    .navButton
+        border-right: 1.5rem;
+}
+
+
   /* ##  The following grayed out code could be useful for styling individual ids, should one want to in the future */
 
 
 /* #home {
-    border-radius: 5px;
-    font-size: 30px;
+    border-radius: .5rem;
+    font-size: 3.0rem;
     text-align: center;
     height: 40px;
     width: 40px;
@@ -195,8 +205,8 @@ h2 {
 }
 
 #about {
-    border-radius: 5px;
-    font-size: 30px;
+    border-radius: .5rem;
+    font-size: 3.0rem;
     text-align: center;
     height: 40px;
     width: 40px;
@@ -209,7 +219,7 @@ h2 {
 
 #contact {
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 3.0rem;
     text-align: center;
     height: 40px;
     width: 40px;
@@ -220,8 +230,8 @@ h2 {
 }
 
 #projects {
-    border-radius: 5px;
-    font-size: 30px;
+    border-radius: .5rem;
+    font-size: 3.0rem;
     text-align: center;
     display: inline-flexbox;
     height: 40px;
@@ -289,14 +299,14 @@ h2 {
     margin: 33px;
     text-align: center;
     background-color: powderblue;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-style: bold;
     
 
 }
 
 h3 {
-    font-size: 60px;
+    font-size: 6.0rem;
     font-family: serif;
     padding-top: 20px;
     color: powderblue;
@@ -311,7 +321,7 @@ h3 {
     margin-left: 25px;
 }
 p { 
-    font-size: 25px;
+    font-size: 2.5rem;
     font-family: serif;
     display: block;
     padding-left: 33px;
@@ -396,7 +406,7 @@ p {
     margin-top: 3px;
     text-align: center;
     background-color: powderblue;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-style: bold;
     margin-left: 87%;
 }
@@ -404,6 +414,8 @@ p {
 .footerText {
     text-align: right;
     font-size: 3.0rem;
+    color: rgb(3, 26, 44);
+    font-style: bold;
     width: 100%
     height: 40px;
     margin: -55px;
@@ -415,6 +427,9 @@ p {
 
 
 
-
+@media screen and (max-width: 800%) {
+	.pictureRow {
+		float: none;
+		width: auto;
 
   
